@@ -1,28 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: oadhesiv <oadhesiv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/01 15:35:08 by oadhesiv          #+#    #+#             */
-/*   Updated: 2019/04/01 15:38:05 by oadhesiv         ###   ########.fr       */
+/*   Created: 2019/04/01 15:36:48 by oadhesiv          #+#    #+#             */
+/*   Updated: 2019/04/01 15:37:12 by oadhesiv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "stdio.h"
-
-void	ft_ft(int *nbr);
-
-int		main(void)
+void	ft_swap(int *a, int *b)
 {
-	int a;
-	int *b;
+	int temp;
 
-	a = 0;
-	b = &a;
-	printf("a: %d\n", a);
-	ft_ft(b);
-	printf("a: %d\n", a);
-	return (0);
+	temp = *a;
+	*a = *b;
+	*b = temp;
 }
