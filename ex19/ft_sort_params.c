@@ -6,7 +6,7 @@
 /*   By: oadhesiv <oadhesiv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/02 15:53:27 by oadhesiv          #+#    #+#             */
-/*   Updated: 2019/04/02 15:59:59 by oadhesiv         ###   ########.fr       */
+/*   Updated: 2019/04/02 16:03:47 by oadhesiv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,6 @@ int		ft_strcmp(char *s1, char *s2)
 	}
 	return (s1[i] - s2[i]);
 }
-
 
 void	my_sort(int argc, char **argv)
 {
