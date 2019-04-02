@@ -6,7 +6,7 @@
 /*   By: oadhesiv <oadhesiv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/02 17:17:17 by oadhesiv          #+#    #+#             */
-/*   Updated: 2019/04/02 17:24:41 by oadhesiv         ###   ########.fr       */
+/*   Updated: 2019/04/02 17:26:17 by oadhesiv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,8 @@ void	process(char *path)
 	char	buf[BUFFER_SIZE + 1];
 
 	fd = open(path, O_RDONLY);
-	if (fd == -1) {
+	if (fd == -1)
+	{
 		ft_putstr(2, "No such file found.\n");
 		return ;
 	}
