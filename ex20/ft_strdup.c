@@ -6,14 +6,13 @@
 /*   By: oadhesiv <oadhesiv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/02 16:05:07 by oadhesiv          #+#    #+#             */
-/*   Updated: 2019/04/02 16:11:25 by oadhesiv         ###   ########.fr       */
+/*   Updated: 2019/04/02 16:13:48 by oadhesiv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "stdlib.h"
-#include "stdio.h"
 
-int		ft_strlen(char* str)
+int		ft_strlen(char *str)
 {
 	int i;
 
@@ -40,10 +39,13 @@ char	*ft_strcpy(char *dst, char *src)
 
 char	*ft_strdup(char *src)
 {
-	
 	char	*ret;
 
-	ret = (char*) malloc(sizeof(char) * (ft_strlen(src) + 1));
+	ret = (char*)malloc(sizeof(char) * (ft_strlen(src) + 1));
+	if (!ret)
+	{
+		return ((void*)0);
+	}
 	ft_strcpy(ret, src);
 	return (ret);
 }
